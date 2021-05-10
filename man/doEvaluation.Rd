@@ -9,7 +9,7 @@ doEvaluation(DF, userWeights = NULL)
 \arguments{
 \item{DF}{data frame, it must contain a column named 'Concentration' and a column named 'Response'}
 
-\item{weights}{the weights used in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"}
+\item{userWeights}{user defined weights in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"}
 }
 \description{
 Evaluate different weighted linear regression models

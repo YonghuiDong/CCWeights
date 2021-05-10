@@ -4,6 +4,8 @@
 #' @param DF data frame, it must contain a column named 'Concentration' and a column named 'Response'
 #' @param p p-value
 #' @param lower.tail default is FALSE
+#' @importFrom stats qf var
+#' @importFrom magrittr %>%
 #' @export
 #' @examples
 #'\dontrun{
@@ -12,6 +14,8 @@
 
 doFtest <- function(DF, p = 0.01, lower.tail = FALSE){
 
+  ## suppress the warning: no visible binding for global variable ‘Concentration’ and 'Compound'
+  Concentration <- Compound <- NULL
   # calculate IS normalized peak areas if IS are used
   if (is.null(DF$IS)) {
     DF$Ratio = DF$Response

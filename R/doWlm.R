@@ -12,7 +12,14 @@
 
 doWlm <- function(DF, weights = NULL) {
 
+  ## suppress the warning: no visible binding for global variable ‘Concentration’ and 'Compound'
+  Concentration <- NULL
+
   #(1) prepare the data
+  # remove samples, keep only STD
+  DF <- DF %>%
+    dplyr::filter(Concentration != 'unknown') %>%
+    dplyr::mutate(Concentration = as.numeric(Concentration))
 
   ## calculate IS normalized peak areas if IS are used
   if (is.null(DF$IS)) {
@@ -24,18 +31,19 @@ doWlm <- function(DF, weights = NULL) {
   # Assign the compound name if it is not specified
   if (is.null(DF$Compound)) {DF$Compound = "X"}
 
-  # remove samples, keep only STD
-  DF <- DF %>%
-    dplyr::filter(Concentration != 'unknown') %>%
-    dplyr::mutate(Concentration = as.numeric(Concentration))
-
   x <- DF$Concentration
   y <- DF$Ratio
+
   if(is.null(weights)){
     models <- lm(y ~ x)
     weights = "1"
   } else {
     models <- lm(y ~ x, weights = eval(parse(text = weights)))
+  }
+
+  if(is.null(weights)){
+    models <- lm(y ~ x)
+    weights = "1"
   }
 
   #(2) residual plot
@@ -95,13 +103,21 @@ doWlm <- function(DF, weights = NULL) {
   figResult <- plotly::subplot(PLinear, pResid, nrows = 2, shareX = T, shareY = F,
                        titleX = T, titleY = T) %>%
     plotly::layout(showlegend = F,
-                   title = paste("<b>weights: </b>", weights, sep = ""))
+                   title = paste("<b>weights: </b>", weights, sep = "")) %>%
+    plotly::config(
+      toImageButtonOptions = list(
+        format = "svg",
+        filename = "myplot",
+        width = 600,
+        height = 700
+      )
+    )
 
   #(4) get sum residual
-  sumResid <- sum(abs(myResid/y * 100))
+  sumResid <- round(sum(abs(myResid/y * 100)), 2)
 
   #(5) save needed results
-  resultList <- list(sumResid = sumResid, figResult = figResult, R2 = r2)
+  resultList <- list(sumResid = sumResid, figResult = figResult, R2 = r2, model = models)
 
   return(resultList)
 
