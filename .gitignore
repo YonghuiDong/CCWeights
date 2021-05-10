@@ -1,8 +1,8 @@
-.Rproj.user
-.Rproj.user/
 .DS_Store
 .Rhistory
-.RData
 .RDataTmp
-.Ruserdata
 .Rbuildignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
