@@ -4,9 +4,11 @@ Title: Perform weighted linear regression for calibration curve
 Version: 0.1.0
 Author: Yonghui Dong
 Maintainer: Yonghui Dong <yonghui.dong@gmail.com>
-Description: CCWeights is used to perform weighted linear regression for calibration curve, particularly for bioanalytical data, in which
+Description: CCWeights is used to perform weighted linear regression for calibration curve, particularly for bioanalytical data, 
+ in which homoscedasticity is frequently not met. CCWeights also provides with a shiny App, allowing the user to easily analyse
+ there own datasets.
 Depends: R (>= 3.5.0)
-Imports: plotly, dplyr, stats
+Imports: plotly, dplyr, stats, magrittr, shiny, bs4Dash, fresh, DT, tools, readxl, rmarkdown, shinyWidgets, readr
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
