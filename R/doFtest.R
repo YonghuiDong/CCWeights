@@ -20,7 +20,7 @@ doFtest <- function(DF, p = 0.01, lower.tail = FALSE){
   if (is.null(DF$IS)) {
     DF$Ratio = DF$Response
   } else {
-    DF$Ratio = round(DF$Response/DF$IS, 3)
+    DF$Ratio = DF$Response/DF$IS
   }
 
   # Assign the compound name if it is not specified
