@@ -6,7 +6,8 @@ userWeightsexist <- reactive({
 
 observeEvent(input$caliDo, {
 
-  validate(need(nrow(userInput()) > 0, "No data"))
+  shiny::validate(need(nrow(userInput()) > 0, "No data"))
+
   M1 <- CCWeights::doCalibration(DF = userInput(), weights = NULL)
   M2 <- CCWeights::doCalibration(DF = userInput(), weights = "1/x")
   M3 <- CCWeights::doCalibration(DF = userInput(), weights = "1/x^2")
