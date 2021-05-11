@@ -43,20 +43,30 @@ doFtest <- function(DF, p = 0.01, lower.tail = FALSE){
     maxCon <- DF %>%
       dplyr::filter(Compound == levels(DF$Compound)[i]) %>%
       dplyr::slice_max(order_by = Concentration)
-    varMin <- var(minCon$Ratio)
-    nMin <- dim(minCon)[1] - 1
-    varMax <- var(maxCon$Ratio)
-    nMax <- dim(maxCon)[1] -1
-    fExp <- round(varMax/varMin, 3)
-    fTab <- round(qf(p = p, df1 = nMin, df2 = nMax, lower.tail = lower.tail), 3)
-    myTest[i, "Compound"] <- levels(DF$Compound)[i]
-    myTest[i, "Experimental_F-value"] <- fExp
-    myTest[i, "Critical_F-Value"] <- fTab
-    if (fExp > fTab) {
-      myTest[i, "Homoscedasticity"] <- "No"
+
+    ## Skip F test if there are no replicates
+    if(nrow(minCon) > 1 & nrow(maxCon) > 1){
+      varMin <- var(minCon$Ratio)
+      nMin <- dim(minCon)[1] - 1
+      varMax <- var(maxCon$Ratio)
+      nMax <- dim(maxCon)[1] -1
+      fExp <- round(varMax/varMin, 3)
+      fTab <- round(qf(p = p, df1 = nMin, df2 = nMax, lower.tail = lower.tail), 3)
+      myTest[i, "Compound"] <- levels(DF$Compound)[i]
+      myTest[i, "Experimental_F-value"] <- fExp
+      myTest[i, "Critical_F-Value"] <- fTab
+      if (fExp > fTab) {
+        myTest[i, "Homoscedasticity"] <- "No"
+        } else {
+        myTest[i, "Homoscedasticity"] <- "Yes"
+        }
     } else {
-      myTest[i, "Homoscedasticity"] <- "Yes"
-    }
+      myTest[i, "Compound"] <- levels(DF$Compound)[i]
+      myTest[i, "Experimental_F-value"] <- "unknown: no replicates"
+      myTest[i, "Critical_F-Value"] <- "unknown: no replicates"
+      myTest[i, "Homoscedasticity"] <- "unknown"
+      }
+
   }
   return(myTest)
 }
