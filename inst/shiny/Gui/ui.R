@@ -27,7 +27,7 @@ bs4DashPage(
     status = "warning",
     title = HTML("<b>CCWeights</b>"),
     brandColor = "warning",
-    src = "https://github.com/pcastellanoescuder/POMA/blob/master/man/figures/logo.png?raw=true",
+    src = "https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/logo.png?raw=true",
     elevation = 3,
     opacity = 0.8,
 
