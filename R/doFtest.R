@@ -51,7 +51,7 @@ doFtest <- function(DF, p = 0.01, lower.tail = FALSE){
       varMax <- var(maxCon$Ratio)
       nMax <- dim(maxCon)[1] -1
       fExp <- round(varMax/varMin, 3)
-      fTab <- round(qf(p = p, df1 = nMin, df2 = nMax, lower.tail = lower.tail), 3)
+      fTab <- round(qf(p = p, df1 = nMax, df2 = nMin, lower.tail = lower.tail), 3)
       myTest[i, "Compound"] <- levels(DF$Compound)[i]
       myTest[i, "Experimental_F-value"] <- fExp
       myTest[i, "Critical_F-Value"] <- fTab
