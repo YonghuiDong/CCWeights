@@ -2,6 +2,7 @@
 #' @description Evaluate different weighted linear regression models
 #' @author Yonghui Dong
 #' @param DF data frame, it must contain a column named 'Concentration' and a column named 'Response'
+#' @param p p-value, default is 0.05
 #' @param userWeights user defined weights in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"
 #' @export
 #' @examples
@@ -9,8 +10,8 @@
 #' result <- doEvaluation(DF)
 #'}
 
-doEvaluation <- function(DF, userWeights = NULL) {
-  Homo <- unique(doFtest(DF, p = 0.01)$Homoscedasticity)
+doEvaluation <- function(DF, p = 0.05, userWeights = NULL) {
+  Homo <- unique(doFtest(DF, p = p)$Homoscedasticity)
   Compound <- unique(DF$Compound)
   if(is.null(userWeights)){userWeights = "None"}
   Model <- c("1", "1/x", "1/x2", "1/y", "1/y^2", paste("user: ", userWeights, sep = ""))
