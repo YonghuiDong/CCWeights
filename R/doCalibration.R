@@ -25,7 +25,7 @@ doCalibration <- function(DF, weights = NULL){
     if (is.null(DFA$IS)) {
       DFA$Ratio = DFA$Response
     } else {
-      DFA$Ratio = round(DFA$Response/DFA$IS, 3)
+      DFA$Ratio = DFA$Response/DFA$IS
     }
 
     # get model
@@ -34,11 +34,12 @@ doCalibration <- function(DF, weights = NULL){
     # get y
     if (!is.null(model)){
       for (i in 1:dim(DFA)[1]) {
-        DFA$Concentration[i] <- round(predict(model, data.frame(x = c(DFA$Ratio[i]))), 3)
+        DFA$Concentration[i] <- round((DFA$Ratio[i] - coef(model)[1])/coef(model)[2], 3)
       }
     }
 
     if (is.null(weights)){weights = "1"}
+    DFA$Ratio <- NULL
     calResult <- cbind.data.frame(DFA, Model = weights)
 
   } else {
