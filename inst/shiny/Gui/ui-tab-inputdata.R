@@ -12,8 +12,8 @@ fluidRow(
            closable = FALSE,
            p("1. You can upload your data in Data Upload tab. CCWeights accepts csv, xls and xlsx formats.'"),
            p("2. Your data should contain at least two columns, i.e., 'concentration' and 'Response'.
-             If your data contains information from more than one metabolites, you need to add an additional column, named 'Compound'.
-             If you have stable isotope labeled standards in your data, you need to add a column named 'IS'."),
+             If your data contains information from more than one compounds, you need to add an additional column, named 'Compound'.
+             If you have internal standards in your data, you need to add a column named 'IS'."),
            p("3. You can load the two example datasets in Data Upload tab to check the data format."),
            p("4. You can view the data in 'Loaded Data' tab, and view the summary statistics of the loaded data in 'Data Summary' tab."),
            p("5. You can click '+' and '-' in the tab to show or hide the contents in the tab.")
