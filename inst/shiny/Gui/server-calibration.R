@@ -8,6 +8,8 @@ userWeightsexist <- reactive({
 
 observeEvent(input$caliDo, {
 
+  options(warn=-1) # temporally hide Unknown or uninitialised column: `IS` warnings
+
   shiny::validate(need(nrow(userInput()) > 0, "No data"))
 
   M1 <- userInput() %>%
