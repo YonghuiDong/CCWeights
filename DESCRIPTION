@@ -1,7 +1,7 @@
 Package: CCWeights
 Type: Package
 Title: Perform weighted linear regression for calibration curve
-Version: 0.1.0
+Version: 0.1.1
 Author: Yonghui Dong
 Maintainer: Yonghui Dong <yonghui.dong@gmail.com>
 Description: CCWeights is used to perform weighted linear regression for calibration curve, particularly for bioanalytical data, 
