@@ -1,7 +1,7 @@
 fluidRow(
-  
+
   column(width = 12,
-         
+
          bs4Card(
            width = 12,
            title = "Instruction",
@@ -17,9 +17,9 @@ fluidRow(
            p("2. Subsequently, you can save the result by clicking the 'Save Result' button.")
            )
          ),
-  
+
   column(width = 3,
-         
+
          bs4Card(
            width = 12,
            inputId = "caliResult_card",
@@ -33,7 +33,7 @@ fluidRow(
            actionButton("caliDo", "Calibrate", icon("paper-plane"),
                         style="color: #fff; background-color: #CD0000; border-color: #9E0000")
          ),
-         
+
          bs4Card(
            width = 12,
            inputId = "caliResult_card",
@@ -48,9 +48,9 @@ fluidRow(
                                           style="color: #fff; background-color: #0091ff; border-color: #0091ff"))
            )
          ),
-  
+
   column(width = 9,
-         
+
          bs4Card(
            width = 12,
            inputId = "homoResult_card",
@@ -64,9 +64,8 @@ fluidRow(
            )
          )
   )
-  
-  
-  
-  
-  
-  
+
+
+
+
+
