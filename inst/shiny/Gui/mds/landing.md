@@ -15,7 +15,7 @@ Although the least-squares regression and curve weighting are well-established s
 
 Below is an overview of CCWeights workflow:
 
-<img src="pix/workflow.png" width="35%"/>
+<img src="pix/workflow.png" width="45%"/>
 
 <em>Figure 1. Schematic workflow of CCWeights</em>
 
@@ -27,7 +27,7 @@ Below is an overview of CCWeights workflow:
   
 - You can also download the templates here to prepare your data.
 
-<img src="pix/datafile.png" width="39%"/>
+<img src="pix/datafile.png" width="50%"/>
 
 <em>Figure 2. Data format requirement</em>
 
