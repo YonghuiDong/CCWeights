@@ -4,10 +4,12 @@
 \alias{doEvaluation}
 \title{Evaluate different weighted linear regression models}
 \usage{
-doEvaluation(DF, userWeights = NULL)
+doEvaluation(DF, p = 0.05, userWeights = NULL)
 }
 \arguments{
 \item{DF}{data frame, it must contain a column named 'Concentration' and a column named 'Response'}
+
+\item{p}{p-value, default is 0.05}
 
 \item{userWeights}{user defined weights in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"}
 }
