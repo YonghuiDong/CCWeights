@@ -12,8 +12,8 @@ observeEvent(input$caliDo, {
 
   shiny::validate(need(nrow(userInput()) > 0, "No data"))
 
-  withProgress(message = 'Calibration in progress',
-               detail = 'It may take a while...', {
+  shiny::withProgress(message = 'Calibration in progress',
+               detail = 'It may take a while...', value = 0.5,{
 
                  M1 <- userInput() %>%
                    dplyr::group_by(Compound) %>%
@@ -56,5 +56,6 @@ observeEvent(input$caliDo, {
                      write.csv(CaliFinal, file, row.names = FALSE)
                      }
                    )
+
                  })
   })
