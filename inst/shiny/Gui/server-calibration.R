@@ -12,46 +12,49 @@ observeEvent(input$caliDo, {
 
   shiny::validate(need(nrow(userInput()) > 0, "No data"))
 
-  M1 <- userInput() %>%
-    dplyr::group_by(Compound) %>%
-    dplyr::do(CCWeights::doCalibration(., weights = NULL))
+  withProgress(message = 'Calibration in progress',
+               detail = 'It may take a while...', {
 
-  M2 <- userInput() %>%
-    dplyr::group_by(Compound) %>%
-    dplyr::do(CCWeights::doCalibration(., weights = "1/x"))
+                 M1 <- userInput() %>%
+                   dplyr::group_by(Compound) %>%
+                   dplyr::do(CCWeights::doCalibration(., weights = NULL))
 
-  M3 <- userInput() %>%
-    dplyr::group_by(Compound) %>%
-    dplyr::do(CCWeights::doCalibration(., weights = "1/x^2"))
+                 M2 <- userInput() %>%
+                   dplyr::group_by(Compound) %>%
+                   dplyr::do(CCWeights::doCalibration(., weights = "1/x"))
 
-  M4 <- userInput() %>%
-    dplyr::group_by(Compound) %>%
-    dplyr::do(CCWeights::doCalibration(., weights = "1/y"))
+                 M3 <- userInput() %>%
+                   dplyr::group_by(Compound) %>%
+                   dplyr::do(CCWeights::doCalibration(., weights = "1/x^2"))
 
-  M5 <- userInput() %>%
-    dplyr::group_by(Compound) %>%
-    dplyr::do(CCWeights::doCalibration(., weights = "1/y^2"))
+                 M4 <- userInput() %>%
+                   dplyr::group_by(Compound) %>%
+                   dplyr::do(CCWeights::doCalibration(., weights = "1/y"))
 
-  M6 <- userInput() %>%
-    dplyr::group_by(Compound) %>%
-    dplyr::do(CCWeights::doCalibration(., weights =  userWeightsexist()))
+                 M5 <- userInput() %>%
+                   dplyr::group_by(Compound) %>%
+                   dplyr::do(CCWeights::doCalibration(., weights = "1/y^2"))
 
-  CaliFinal <- rbind.data.frame(M1, M2, M3, M4, M5, M6)
+                 M6 <- userInput() %>%
+                   dplyr::group_by(Compound) %>%
+                   dplyr::do(CCWeights::doCalibration(., weights =  userWeightsexist()))
 
-  output$caliResult <- renderDataTable({
-    datatable(CaliFinal,
-              class = 'cell-border stripe',
-              rownames = FALSE,
-              options = list(scrollX = TRUE))
-    })
+                 CaliFinal <- rbind.data.frame(M1, M2, M3, M4, M5, M6)
 
-  output$caliSave<- downloadHandler(
-    filename = function() {
-      paste("calibrationResults_", Sys.Date(), ".csv", sep="")
-    },
-    content = function(file) {
-      write.csv(CaliFinal, file, row.names = FALSE)
-    }
-  )
+                 output$caliResult <- renderDataTable({
+                   datatable(CaliFinal,
+                             class = 'cell-border stripe',
+                             rownames = FALSE,
+                             options = list(scrollX = TRUE))
+                   })
 
-})
+                 output$caliSave<- downloadHandler(
+                   filename = function() {
+                     paste("calibrationResults_", Sys.Date(), ".csv", sep="")
+                     },
+                   content = function(file) {
+                     write.csv(CaliFinal, file, row.names = FALSE)
+                     }
+                   )
+                 })
+  })
