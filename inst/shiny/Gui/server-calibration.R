@@ -13,7 +13,7 @@ observeEvent(input$caliDo, {
   shiny::validate(need(nrow(userInput()) > 0, "No data"))
 
   shiny::withProgress(message = 'Calibration in progress',
-               detail = 'It may take a while...', value = 0.5,{
+               detail = 'It may take a while...', value = 0.3,{
 
                  M1 <- userInput() %>%
                    dplyr::group_by(Compound) %>%
