@@ -28,7 +28,7 @@ fluidRow(
            collapsible = FALSE,
            collapsed = FALSE,
            closable = FALSE,
-           numericInput("pval_cutoff", strong("p-value threshold"), value = 0.05, min = 0, max = 1, step = 0.01),
+           numericInput("pval_cutoff", strong("p-value threshold"), value = 0.01, min = 0, max = 1, step = 0.01),
            actionButton("homoTest", "Start Test", icon("paper-plane"),
                         style="color: #fff; background-color: #CD0000; border-color: #9E0000")
            )
