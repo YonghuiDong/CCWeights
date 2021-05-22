@@ -38,10 +38,10 @@ fluidRow(
                         selected = 'yes'),
            conditionalPanel(condition = "input.example_data == 'yes'",
                             radioButtons("example_dataset", "Please choose an example dataset:",
-                                         choices = c("Example with internal standard" = 'std',
-                                                     "Example without internal standard" = 'nostd'
+                                         choices = c("Example without internal standard" = 'nostd',
+                                                     "Example with internal standard" = 'std'
                                                      ),
-                                         selected = 'std')
+                                         selected = 'nostd')
                             ),
            conditionalPanel(condition = "input.example_data == 'umd'",
                             fileInput("target","Upload your file (csv/xls/xlsx format):")
