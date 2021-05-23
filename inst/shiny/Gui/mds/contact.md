@@ -4,7 +4,7 @@
 
 To report bugs and/or request features, please use the following GitHub issue channel: 
 
-[<b><span style="color:#F17F42">https://github.com/YonghuiDong/CCWeights/issues</span></b>](https://github.com/YonghuiDong/Weights/issues)
+[<b><span style="color:#F17F42">https://github.com/YonghuiDong/CCWeights/issues</span></b>](https://github.com/YonghuiDong/CCWeights/issues)
 
 
 ### Citation
