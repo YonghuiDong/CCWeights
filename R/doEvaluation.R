@@ -14,7 +14,7 @@ doEvaluation <- function(DF, p = 0.05, userWeights = NULL) {
   Homo <- unique(doFtest(DF, p = p)$Homoscedasticity)
   Compound <- unique(DF$Compound)
   if(is.null(userWeights)){userWeights = "None"}
-  Model <- c("1", "1/x", "1/x2", "1/y", "1/y^2", paste("user: ", userWeights, sep = ""))
+  Model <- c("1", "1/x", "1/x^2", "1/y", "1/y^2", paste("user: ", userWeights, sep = ""))
   W0 <- doWlm(DF, weights = NULL)
   W1x <- doWlm(DF, weights = "1/x")
   Wx2<- doWlm(DF, weights = "1/x^2")
