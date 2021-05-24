@@ -11,9 +11,8 @@ fluidRow(
            collapsed = FALSE,
            closable = FALSE,
            p("The assumption of homoscedasticity is central to linear regression models.
-             Homoscedasticity describes a situation in which the error term is the same across
-             all values of the independent variables"),
-           p("2. You can click '+' to view the example file in the loaded file tab. Two example files are provided here.'")
+             Homoscedasticity describes a situation in which the error term is the same across all values of the independent variables."),
+           p("1. You can customize the p-value to test the homoscedasticity of your dataset.")
            )
          ),
 

@@ -11,7 +11,7 @@ To report bugs and/or request features, please use the following GitHub issue ch
 
 If you find **CCWeights** useful, please consider citing our publication:
 
-- xxxx, 
+- xCCWeights: An R package and web application for automated evaluation and selection of weighting factors for accurate quantification using linear calibration curve.
 
 
 ------

@@ -1,11 +1,9 @@
 
 # Welcome to CCWeights &nbsp;<img src='pix/logo.png' align="right" height="130"/>
 
-Although weighted linear regression is well-established statistical methods, the `Test-and-Fit` strategy is still widely used for the selection of calibration curves and the weighting factors in bioanalytical community. With the `Test-and-Fit` strategy, an incorrect weighting factor can be easily selected because this strategy is based on the analyst’s subjective choice.
+A well-established and interpreted calibration curve is essential for any analytical methodology. An effective way to account for heteroscedasticity is to use weighted linear regression (WLR) with an appropriate weighting factor. 
 
-<b><span style="color:#F17F42">CCweights</span></b> is a web-based tool (also an R package) for automated assessment and selection of weighting factors for accurate quantification using linear calibration curve.
-
-<b><span style="color:#F17F42">CCweights</span></b> serves as a user friendly and systematically 
+<b><span style="color:#F17F42">CCweights</span></b> is a web-based tool (also an R package), which provides automated and efficient data analysis workflow to evaluate and select the best weighting factor for linear calibration curve and quantify targeted analytes accordingly.
 
 ---
 

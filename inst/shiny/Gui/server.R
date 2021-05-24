@@ -5,7 +5,7 @@ shinyServer(function(input, output, session) {
   source("server-homoscedasticity.R",local = TRUE)
   source("server-weights.R",local = TRUE)
   source("server-calibration.R",local = TRUE)
-  
+
   }
 )
 
