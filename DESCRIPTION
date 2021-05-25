@@ -4,8 +4,8 @@ Title: Perform Weighted Linear Regression for Calibration Curve
 Version: 0.1.2
 Author: Yonghui Dong
 Maintainer: Yonghui Dong <yonghui.dong@gmail.com>
-Description: CCWeights is used for automated assessment and selection of weighting factors for accurate quantification using linear calibration curve. 
- In addition, CCWeights also provides with a shiny App, allows users to analyze their data using an interactive graphical user interface, without any programming requirements.
+Description: Automated assessment and selection of weighting factors for accurate quantification using linear calibration curve. 
+ In addition, a shiny App is provided, allowing users to analyze their data using an interactive graphical user interface, without any programming requirements.
 Depends: R (>= 3.5.0)
 Imports: plotly, dplyr, stats, magrittr, shiny, bs4Dash, fresh, DT, tools, readxl, rmarkdown, readr
 License: GPL-3
