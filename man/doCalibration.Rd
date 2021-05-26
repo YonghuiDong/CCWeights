@@ -15,9 +15,10 @@ doCalibration(DF, weights = NULL)
 perform calibration
 }
 \examples{
-\dontrun{
+Concentration <- rep(c(10, 50, 100, "unknown"), each = 3)
+Response <- c(133, 156, 177, 6650, 7800, 8850, 13300, 15600, 17700, 156, 1450, 1400)
+DF <- cbind.data.frame(Concentration = Concentration, Response = Response)
 result <- doCalibration(DF)
-}
 }
 \author{
 Yonghui Dong

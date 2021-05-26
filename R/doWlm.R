@@ -6,9 +6,10 @@
 #' @importFrom stats coef fitted lm resid setNames
 #' @export
 #' @examples
-#'\dontrun{
+#' Concentration <- rep(c(10, 50, 100, 500), each = 3)
+#' Response <- c(133, 156, 177, 1300, 1450, 1600, 4000, 3881, 3700, 140000, 139000, 140000)
+#' DF <- cbind.data.frame(Concentration = Concentration, Response = Response)
 #' result <- doWlm(DF, weights = "1/x^2")
-#'}
 
 doWlm <- function(DF, weights = NULL) {
 

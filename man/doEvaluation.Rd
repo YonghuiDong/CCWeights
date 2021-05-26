@@ -17,9 +17,10 @@ doEvaluation(DF, p = 0.05, userWeights = NULL)
 Evaluate different weighted linear regression models
 }
 \examples{
-\dontrun{
+Concentration <- rep(c(10, 50, 100, 500), each = 3)
+Response <- c(133, 156, 177, 1300, 1450, 1600, 4000, 3881, 3700, 140000, 139000, 140000)
+DF <- cbind.data.frame(Concentration = Concentration, Response = Response)
 result <- doEvaluation(DF)
-}
 }
 \author{
 Yonghui Dong

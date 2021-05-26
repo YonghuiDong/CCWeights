@@ -8,9 +8,10 @@
 #' @importFrom magrittr %>%
 #' @export
 #' @examples
-#'\dontrun{
-#' result <- doFtest(F, p = 0.01)
-#'}
+#' Concentration <- rep(c(10, 50, 100, 500), each = 3)
+#' Response <- c(133, 156, 177, 1300, 1450, 1600, 4000, 3881, 3700, 140000, 139000, 140000)
+#' DF <- cbind.data.frame(Concentration, Response)
+#' result <- doFtest(DF, p = 0.01)
 
 doFtest <- function(DF, p = 0.01, lower.tail = FALSE){
 
