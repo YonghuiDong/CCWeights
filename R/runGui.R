@@ -1,11 +1,10 @@
-#' @title Run CCWeights shiny Gui
-#' @description Run CCWeights shiny Gui
+#' @title Run CCWeights Gui
+#' @description Run CCWeights Gui.
 #' @author Yonghui Dong
 #' @export
+#' @return Gui
 #' @examples
-#'\dontrun{
-#' runGui()
-#'}
+#' if(interactive()){}
 
 
 #' @export

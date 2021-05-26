@@ -1,5 +1,5 @@
-#' @title Perform F test
-#' @description perform F test to evaluate homoscedasticity
+#' @title Perform F Test
+#' @description perform F test to evaluate homoscedasticity.
 #' @author Yonghui Dong
 #' @param DF data frame, it must contain a column named 'Concentration' and a column named 'Response'
 #' @param p p-value
@@ -7,6 +7,7 @@
 #' @importFrom stats qf var
 #' @importFrom magrittr %>%
 #' @export
+#' @return dataframe, F test result
 #' @examples
 #' Concentration <- rep(c(10, 50, 100, 500), each = 3)
 #' Response <- c(133, 156, 177, 1300, 1450, 1600, 4000, 3881, 3700, 140000, 139000, 140000)

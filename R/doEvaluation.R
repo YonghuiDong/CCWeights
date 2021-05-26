@@ -1,10 +1,11 @@
-#' @title Evaluate different weighted linear regression models
-#' @description Evaluate different weighted linear regression models
+#' @title Evaluate Different Weighting Factors
+#' @description Evaluate different weighting factors.
 #' @author Yonghui Dong
 #' @param DF data frame, it must contain a column named 'Concentration' and a column named 'Response'
 #' @param p p-value, default is 0.05
 #' @param userWeights user defined weights in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"
 #' @export
+#' @return dataframe, weighting factor evaluation result
 #' @examples
 #' Concentration <- rep(c(10, 50, 100, 500), each = 3)
 #' Response <- c(133, 156, 177, 1300, 1450, 1600, 4000, 3881, 3700, 140000, 139000, 140000)

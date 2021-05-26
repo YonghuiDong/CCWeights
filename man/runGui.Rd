@@ -2,17 +2,18 @@
 % Please edit documentation in R/runGui.R
 \name{runGui}
 \alias{runGui}
-\title{Run CCWeights shiny Gui}
+\title{Run CCWeights Gui}
 \usage{
 runGui()
 }
+\value{
+Gui
+}
 \description{
-Run CCWeights shiny Gui
+Run CCWeights Gui.
 }
 \examples{
-\dontrun{
-runGui()
-}
+if(interactive()){}
 }
 \author{
 Yonghui Dong

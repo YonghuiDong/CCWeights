@@ -2,7 +2,7 @@
 % Please edit documentation in R/doFtest.R
 \name{doFtest}
 \alias{doFtest}
-\title{Perform F test}
+\title{Perform F Test}
 \usage{
 doFtest(DF, p = 0.01, lower.tail = FALSE)
 }
@@ -13,8 +13,11 @@ doFtest(DF, p = 0.01, lower.tail = FALSE)
 
 \item{lower.tail}{default is FALSE}
 }
+\value{
+dataframe, F test result
+}
 \description{
-perform F test to evaluate homoscedasticity
+perform F test to evaluate homoscedasticity.
 }
 \examples{
 Concentration <- rep(c(10, 50, 100, 500), each = 3)

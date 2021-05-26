@@ -1,10 +1,11 @@
-#' @title Perform weighted linear regression
-#' @description perform weighted linear regression and evaluate by using summed residual
+#' @title Perform Weighted Linear Regression
+#' @description Perform weighted linear regression and evaluate by using summed residual.
 #' @author Yonghui Dong
 #' @param DF data frame, it must contain a column named 'Concentration' and a column named 'Response'
 #' @param weights the weights used in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"
 #' @importFrom stats coef fitted lm resid setNames
 #' @export
+#' @return list, weighted linear regression result
 #' @examples
 #' Concentration <- rep(c(10, 50, 100, 500), each = 3)
 #' Response <- c(133, 156, 177, 1300, 1450, 1600, 4000, 3881, 3700, 140000, 139000, 140000)

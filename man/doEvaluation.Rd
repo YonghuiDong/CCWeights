@@ -2,7 +2,7 @@
 % Please edit documentation in R/doEvaluation.R
 \name{doEvaluation}
 \alias{doEvaluation}
-\title{Evaluate different weighted linear regression models}
+\title{Evaluate Different Weighting Factors}
 \usage{
 doEvaluation(DF, p = 0.05, userWeights = NULL)
 }
@@ -13,8 +13,11 @@ doEvaluation(DF, p = 0.05, userWeights = NULL)
 
 \item{userWeights}{user defined weights in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"}
 }
+\value{
+dataframe, weighting factor evaluation result
+}
 \description{
-Evaluate different weighted linear regression models
+Evaluate different weighting factors.
 }
 \examples{
 Concentration <- rep(c(10, 50, 100, 500), each = 3)

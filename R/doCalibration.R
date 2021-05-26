@@ -1,11 +1,12 @@
-#' @title Perform calibration
-#' @description perform calibration
+#' @title Perform Calibration
+#' @description Perform calibration
 #' @author Yonghui Dong
 #' @param DF data frame, it must contain a column named 'Concentration' and a column named 'Response'
 #' @param weights default is NULL
 #' @importFrom stats predict
 #' @importFrom magrittr %>%
 #' @export
+#' @return dataframe, the quantification result
 #' @examples
 #' Concentration <- rep(c(10, 50, 100, "unknown"), each = 3)
 #' Response <- c(133, 156, 177, 6650, 7800, 8850, 13300, 15600, 17700, 156, 1450, 1400)

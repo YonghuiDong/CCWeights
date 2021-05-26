@@ -2,7 +2,7 @@
 % Please edit documentation in R/doCalibration.R
 \name{doCalibration}
 \alias{doCalibration}
-\title{Perform calibration}
+\title{Perform Calibration}
 \usage{
 doCalibration(DF, weights = NULL)
 }
@@ -11,8 +11,11 @@ doCalibration(DF, weights = NULL)
 
 \item{weights}{default is NULL}
 }
+\value{
+dataframe, the quantification result
+}
 \description{
-perform calibration
+Perform calibration
 }
 \examples{
 Concentration <- rep(c(10, 50, 100, "unknown"), each = 3)

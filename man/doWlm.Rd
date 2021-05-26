@@ -2,7 +2,7 @@
 % Please edit documentation in R/doWlm.R
 \name{doWlm}
 \alias{doWlm}
-\title{Perform weighted linear regression}
+\title{Perform Weighted Linear Regression}
 \usage{
 doWlm(DF, weights = NULL)
 }
@@ -11,8 +11,11 @@ doWlm(DF, weights = NULL)
 
 \item{weights}{the weights used in linear regression, default is NULL. User can easily define weights, e.g., "1/x", "1/x^2", "1/y"}
 }
+\value{
+list, weighted linear regression result
+}
 \description{
-perform weighted linear regression and evaluate by using summed residual
+Perform weighted linear regression and evaluate by using summed residual.
 }
 \examples{
 Concentration <- rep(c(10, 50, 100, 500), each = 3)
