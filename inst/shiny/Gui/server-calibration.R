@@ -8,7 +8,7 @@ userWeightsexist <- reactive({
 
 observeEvent(input$caliDo, {
 
-  options(warn=-1) # temporally hide Unknown or uninitialised column: `IS` warnings
+  options(warn=-1) # temporally hide Unknown or uninitialized column: `IS` warnings
 
   shiny::validate(need(nrow(userInput()) > 0, "No data"))
 
@@ -50,7 +50,7 @@ observeEvent(input$caliDo, {
 
                  output$caliSave<- downloadHandler(
                    filename = function() {
-                     paste("calibrationResults_", Sys.Date(), ".csv", sep="")
+                     paste("calibrationResults_", ".csv", sep="")
                      },
                    content = function(file) {
                      write.csv(CaliFinal, file, row.names = FALSE)
