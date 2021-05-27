@@ -13,8 +13,8 @@ fluidRow(
            p("In this section you can quantify the compounds in your samples based on the calibration curve. Although optimum weighting
              scheme has been suggested, here different weighting schemes including the user defined one if available,
              are used to quantify each compound in the sample. This allows the user to compare the results and make their final desicion."),
-           p("1. You can click <Calibrate> button to perform calibration."),
-           p("2. Subsequently, you can save the result by clicking the <Save Result> button.")
+           p("1. You can click", span("Calibrate"), "button to perform calibration."),
+           p("2. Subsequently, you can save the result by clicking the", span("Save Result"), "button.")
            )
          ),
 

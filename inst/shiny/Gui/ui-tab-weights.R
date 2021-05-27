@@ -14,15 +14,15 @@ fluidRow(
              account for the greater influence of the greater concentrations on the fitted regression line is to
              use weighted least squares linear regression. This section tests 5 different models in order
              to help the user to choose the best weights."),
-           p("1. The results are displayed for each compound, you can select the compound name in <View Result> tab to check
+           p("1. The results are displayed for each compound, you can select the compound name in", strong("View Result"), "tab to check
              the corresponding result."),
-           p("2. Additionally, you can define and test your own preferred weighting factors in <Add your own weights> tab.
+           p("2. Additionally, you can define and test your own preferred weighting factors in", strong("Add your own weights"), "tab.
              Don't worry if you input some wrong weighting schemes. CCWeights knows how to skip them."),
            p("3. Two types of results are given here. One is a summerized table, which contains the evaluation results of each model, and
              the suggested model. The residual and linear regression plots for each model are also provided here to allow the user
              to interactively visulize the results."),
-           p("4. You can download the figures of interest in 'svg' format by clicking the 'Camera' ion (download plot) in the figure."),
-           p("5. You can click '+' and '-' in the tab to show or hide the contents in the tab.")
+           p("4. You can download the figures of interest in", span("svg", style = "color:#f15c42"), "format by clicking the", span("Camera", style = "color:#f15c42"), "ion (download plot) in the figure."),
+           p("5. You can click", strong('+'), "and", strong('-'), "in the tab to show or hide the contents in the tab.")
            )
          ),
 
