@@ -73,7 +73,7 @@ bs4DashPage(
       column(
         width = 12,
         align = "center",
-        "Blavatnic Center for Drug Discovery (BCDD)",
+        "Blavatnik Center for Drug Discovery (BCDD)",
         br(),
         "Tel Aviv University",
         br(),
