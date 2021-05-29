@@ -21,7 +21,7 @@ fluidRow(
            p("3. Two types of results are given here. One is a summerized table, which contains the evaluation results of each model, and
              the suggested model. The residual and linear regression plots for each model are also provided here to allow the user
              to interactively visulize the results."),
-           p("4. You can download the figures of interest in", span("svg", style = "color:#f15c42"), "format by clicking the", span("Camera", style = "color:#f15c42"), "ion (download plot) in the figure."),
+           p("4. You can download the figures of interest in", span("svg", style = "color:#f15c42"), "format by clicking the", span("Camera", style = "color:#f15c42"), "icon (download plot) in the figure."),
            p("5. You can click", strong('+'), "and", strong('-'), "in the tab to show or hide the contents in the tab.")
            )
          ),
