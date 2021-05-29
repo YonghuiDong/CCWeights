@@ -17,7 +17,7 @@ Below is an overview of CCWeights workflow:
 
 **Data upload:** 
 
-- Data must contain at least two columns, one is named as `Concentration`, one is named as `Response`. In case you have more than one compound in your sample, you need to have a third column called `Compound`. If internal standards are used (e.g.. stable isotope labeled internal standards), please include another column named `IS`.
+- Data must contain at least two columns, one is `Concentration`, and another one is `Response`. In case you have more than one compound in your sample, you need to have a third column called `Compound`. If internal standards are used (e.g., stable isotope labeled internal standards), please include another column named `IS`.
   
 - You can refer to the example data in the **Upload Data** tab or **Figure 2** for the data format.
   

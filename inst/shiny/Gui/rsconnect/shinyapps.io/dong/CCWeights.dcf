@@ -5,9 +5,9 @@ account: dong
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4173102
-bundleId: 4654753
+bundleId: 4655268
 url: https://bcdd.shinyapps.io/CCWeights/
-when: 1622302292.12795
-lastSyncTime: 1622302292.12796
+when: 1622318718.51646
+lastSyncTime: 1622318718.51647
 asMultiple: FALSE
 asStatic: FALSE
