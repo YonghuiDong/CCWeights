@@ -18,4 +18,4 @@ If you find **CCWeights** useful, please consider citing our publication:
 
 
 ------
-<a href= 'https://bcdd.tau.ac.il/'><img src='pix/tau.png' alt='TAU' title='Tel Aviv University' width='500'/></a>
+<a href= 'https://bcdd.tau.ac.il/'><img src='pix/Tau.png' alt='TAU' title='Tel Aviv University' width='500'/></a>

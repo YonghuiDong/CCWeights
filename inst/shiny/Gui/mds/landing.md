@@ -17,7 +17,7 @@ Below is an overview of CCWeights workflow:
 
 **Data upload:** 
 
-- Data must contain at least two columns, one is named as `Concentration`, one is named as `Response`. In case you have more than one compounds in your sample, you need to have a third column called `Compound`. If internal standards are used (e.g.. stable isotope labeled internal standards), please include another column named `IS`.
+- Data must contain at least two columns, one is named as `Concentration`, one is named as `Response`. In case you have more than one compound in your sample, you need to have a third column called `Compound`. If internal standards are used (e.g.. stable isotope labeled internal standards), please include another column named `IS`.
   
 - You can refer to the example data in the **Upload Data** tab or **Figure 2** for the data format.
   
@@ -36,5 +36,5 @@ Below is an overview of CCWeights workflow:
 CCWeights is publicly available on **[<b><span style="color:#F17F42">CRAN repository</span></b>](https://cran.rproject.org/web/packages/CCWeights)**, with source code available on **[<b><span style="color:#F17F42">GitHub</span></b>](https://github.com/YonghuiDong/CCWeights)** under a GPL-3 license. The web application can be run locally from R console using a simple command `runGui()`. Alternatively, the web application can be freely accessed for direct online use at **[<b><span style="color:#F17F42">https://CCWeights.shiny.com</span></b>](https://CCWeights.shiny.com</span)**. 
 
 ---
-<a href= 'https://bcdd.tau.ac.il/'><img src='pix/tau.png' alt='TAU' title='Tel Aviv University' width='500'/></a>
+<a href= 'https://bcdd.tau.ac.il/'><img src='pix/Tau.png' alt='TAU' title='Tel Aviv University' width='500'/></a>
 
