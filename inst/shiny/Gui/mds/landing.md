@@ -1,7 +1,7 @@
 
 # Welcome to CCWeights &nbsp;<img src='pix/logo.png' align="right" height="130"/>
 
-A well-established and interpreted calibration curve is essential for any analytical methodology. An effective way to account for heteroscedasticity is to use weighted linear regression (WLR) with an appropriate weighting factor. 
+A well-established and interpreted calibration curve is essential for any analytical methodology. 
 
 <b><span style="color:#F17F42">CCweights</span></b> is a web-based tool (also an R package), which provides automated and efficient data analysis workflow to evaluate and select the best weighting factor for linear calibration curve and quantify targeted analytes accordingly.
 
