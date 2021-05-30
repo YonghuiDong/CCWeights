@@ -15,7 +15,7 @@ fluidRow(
            p("(b)", strong("If the data are heteroscedastic,"), "five commonly used weighting factors, i.e., 1/x0, 1/x, 1/x2, 1/y and 1/y2,
              together with user-defined weighting factors (if present) are tested. By applying regression with different weighting
              factors on a set of calibration curve standard data, the best weighting factor is identified by choosing the
-             one generating the smallest sum of the absolute relative errors (sum%RE)"),
+             one generating the smallest sum of the absolute relative errors (sum%RE)."),
            strong("Instruction", style = "color:#f15c42"),
            p("1. The results are displayed for each compound, you can select the compound name in", span("View Result", style = "color:#f15c42"), "tab to check
              the corresponding result."),
