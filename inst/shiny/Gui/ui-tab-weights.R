@@ -17,9 +17,9 @@ fluidRow(
              factors on a set of calibration curve standard data, the best weighting factor is identified by choosing the
              one generating the smallest sum of the absolute relative errors (sum%RE)"),
            strong("Instruction", style = "color:#f15c42"),
-           p("1. The results are displayed for each compound, you can select the compound name in", strong("View Result"), "tab to check
+           p("1. The results are displayed for each compound, you can select the compound name in", span("View Result", style = "color:#f15c42"), "tab to check
              the corresponding result."),
-           p("2. Additionally, you can define and test your own preferred weighting factors in", strong("Add your own weights"), "tab.
+           p("2. Additionally, you can define and test your own preferred weighting factors in", span("Add your own weights", style = "color:#f15c42"), "tab.
              Don't worry if you input some wrong weighting schemes. CCWeights knows how to skip them."),
            p("3. Two types of results are given here. One is a summerized table, which contains the evaluation results of each model, and
              the suggested model. The residual and linear regression plots for each model are also provided here to allow the user
