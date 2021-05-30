@@ -13,7 +13,7 @@ fluidRow(
            p("It has been suggested that a weighting factor should only be used when homoscedasticity is not met for analytical data.
              CCWeights first tests data homoscedasticity by calculating the probability that the variance of measurements at the highest
              concentration level is smaller than the variance of measurements at the lowest concentration level using an F-test."),
-           p("The test of homoscedasticity is accepted when", strong("experimental F value (Fexp)"), "is smaller than corresponding", strong("F table value (Ttab)"),
+           p("The test of homoscedasticity is accepted when", strong("Experimental F value"), "is smaller than corresponding", strong("Critical F value (or F Table value)"),
              "at confidence of", strong("99% (i.e., 1 - p-value). ")),
            p("1. You can customize the p-value to test the homoscedasticity of your dataset."),
            p("2. You can click", strong('+'), "and", strong('-'), "in the tab to show or hide the contents in the tab.")
