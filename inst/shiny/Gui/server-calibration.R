@@ -50,7 +50,7 @@ observeEvent(input$caliDo, {
 
                           output$caliSave<- downloadHandler(
                             filename = function() {
-                              paste("calibrationResults_", ".csv", sep="")
+                              paste("quantificationResults_", ".csv", sep="")
                             },
                             content = function(file) {
                               write.csv(CaliFinal, file, row.names = FALSE)
