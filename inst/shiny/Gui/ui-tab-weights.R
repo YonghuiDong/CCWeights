@@ -10,10 +10,13 @@ fluidRow(
            collapsible = TRUE,
            collapsed = FALSE,
            closable = FALSE,
-           p("When the assumption of homoscedasticity is not met for analytical data, a simple and effective way to
-             account for the greater influence of the greater concentrations on the fitted regression line is to
-             use weighted least squares linear regression. This section tests 5 different models in order
-             to help the user to choose the best weights."),
+           strong("How is the best weighting factor selected?", style = "color:#f15c42"),
+           p("(a)", strong("If the data are homoscedastic,"), "weighting factor = 1 (1/x0, unweight linear regression) is suggested."),
+           p("(b)", strong("If the data are heteroscedastic,"), "five commonly used weighting factors, i.e., 1/x0, 1/x, 1/x2, 1/y and 1/y2,
+             together with user-defined weighting factors (if present) are tested. By applying regression with different weighting
+             factors on a set of calibration curve standard data, the best weighting factor is identified by choosing the
+             one generating the smallest sum of the absolute relative errors (sum%RE)"),
+           strong("Instruction", style = "color:#f15c42"),
            p("1. The results are displayed for each compound, you can select the compound name in", strong("View Result"), "tab to check
              the corresponding result."),
            p("2. Additionally, you can define and test your own preferred weighting factors in", strong("Add your own weights"), "tab.
