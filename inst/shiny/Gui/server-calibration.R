@@ -12,7 +12,7 @@ observeEvent(input$caliDo, {
 
   suppressWarnings(
 
-    shiny::withProgress(message = 'Calibration in progress',
+    shiny::withProgress(message = 'Quantification in progress',
                         detail = 'It may take a while...', value = 0.3,{
 
                           M1 <- userInput() %>%
