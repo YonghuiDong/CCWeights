@@ -11,11 +11,14 @@ fluidRow(
            collapsed = FALSE,
            closable = FALSE,
            p("In this section you can quantify your samples based on the calibration curve."),
-           p("Data with", strong("unknown"), "concentration is quantified here."),
+           p("Data with", span("unknown", style = "color:#f15c42"), "concentration is quantified here."),
            p("Although optimum weighting scheme has been suggested, here different weighting schemes including the user defined one if available,
              are used to quantify each compound in the sample. This allows the user to compare the results and make their final desicion."),
-           p("1. You can click", span("Quantify", style = "color:#f15c42"), "button to perform calibration."),
-           p("2. Subsequently, you can save the result by clicking the", span("Save Result", style = "color:#f15c42"), "button.")
+           p("1. You can click", strong("Quantify"), "button to perform calibration."),
+           p("2. Subsequently, you can save the result by clicking the", strong("Save Result"), "button."),
+           p("3.", span("Note: when sample responses fall out of the linear range, the predicted concentrations are under- or overestimated", style = "color:#f15c42"),
+             ".Therefore, we have included a column named", span("Attention", style = "color:#f15c42"), "in the result file to remind the users of such cases."),
+           p("4.", span("Note: when the user defined weighting factor is not available",  style = "color:#f15c42"), ", unknown concentration will be given under this weighting factor in the result.")
            )
          ),
 
