@@ -20,6 +20,9 @@ doCalibration <- function(DF, weights = NULL){
   Concentration <- NULL
   Attention <- NULL
   Compound <- NULL
+  Response <- NULL
+  minR <- NULL
+  maxR <- NULL
 
   ## Get the calibration range for each compound
   if (is.null(DF$Compound)) {DF$Compound = "X"}
