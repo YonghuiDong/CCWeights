@@ -16,9 +16,12 @@ fluidRow(
              are used to quantify each compound in the sample. This allows the user to compare the results and make their final desicion."),
            p("1. You can click", strong("Quantify"), "button to perform calibration."),
            p("2. Subsequently, you can save the result by clicking the", strong("Save Result"), "button."),
-           p("3.", span("Note: when sample responses fall out of the linear range, the predicted concentrations are under- or overestimated", style = "color:#f15c42"),
-             ".Therefore, we have included a column named", span("Attention", style = "color:#f15c42"), "in the result file to remind the users of such cases."),
-           p("4.", span("Note: when the user defined weighting factor is not available",  style = "color:#f15c42"), ", unknown concentration will be given under this weighting factor in the result.")
+           p("3. Note: ", span("when sample responses fall out of the linear range, the predicted concentrations are under- or over-estimated", style = "color:#f15c42"),
+             ".Therefore, we have included a column named", span("Attention", style = "color:#f15c42"), "in the result file. If the sample response is within the linear range,",
+             span("Attention = no;", style = "color:#f15c42"), "otherwise,", span("Attention = response out of calibration range.",style = "color:#f15c42"),
+             "Users should carefully examine the quantification results in this case."),
+           p("4. Note: ", span("when the user defined weighting factor is not available",  style = "color:#f15c42"), ", quantification will not be perfromed and analyte concentration
+             will remain unknown under this weighting factor in the result.")
            )
          ),
 
