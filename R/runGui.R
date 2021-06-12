@@ -1,7 +1,7 @@
 #' @title Run CCWeights Gui
 #' @description Run CCWeights Gui.
 #' @author Yonghui Dong
-#' @import bs4Dash shinyWidgets fresh DT tools readxl rmarkdown readr
+#' @import bs4Dash fresh DT tools readxl rmarkdown readr
 #' @export
 #' @return Gui
 #' @examples
