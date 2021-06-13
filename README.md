@@ -23,7 +23,7 @@ require(devtools)
 install_github("YonghuiDong/CCWeights")
 ```
 
-Note: you need to install R package `bs4Dash` version <= 0.50 in order to run CCWeights shiny app locally. Please refer to section `Known Issues` for more details.
+Note: you need to install R package `bs4Dash` version <= 0.50 in order to run CCWeights shiny app locally. Please refer to section [Known Issues](#known-issues) for more details.
 
 # Workflow
 
