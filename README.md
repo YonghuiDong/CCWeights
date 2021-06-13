@@ -31,11 +31,11 @@ Below is an overview of CCWeights workflow:
   
 - You can also **[<b><span style="color:#F17F42">download the templates here</span></b>](https://github.com/YonghuiDong/CCWeights/tree/main/inst/shiny/Templete)** to prepare your data accordingly.
 
-<img src="pix/datafile.png" width="50%"/>
+<img src="https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/datafile.png" width="50%"/>
 
 <em>Figure 2. Data format requirement</em>
 
 - Once data file is successfully uploaded, you can perform data analysis following the steps shown in Figure 1.
 
----
+<br></br>
 
