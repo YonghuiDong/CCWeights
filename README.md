@@ -43,7 +43,7 @@ As R package `bs4Dash` has recently undergone major rework, and CCWeights built 
 
 There are two simple ways to install the old version of `bs4Dash`:
 
-#### 1. Using devtools to install older package version
+#### 1. Using devtools to install the older package version
 
 ```r
 require(devtools)
