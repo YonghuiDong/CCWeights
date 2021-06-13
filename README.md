@@ -37,5 +37,22 @@ Below is an overview of CCWeights workflow:
 
 - Once data file is successfully uploaded, you can perform data analysis following the steps shown in Figure 1.
 
+## Known Issues
+
+As R package `bs4Dash` has recently undergone major rework, and CCWeights built with bs4Dash (version <= 0.5.0) is not compatible with v2.0.0 due to substantial breaking changes in the API. The users need to use the old version to run the shiny App of CCWeights locally.
+
+There are two simple ways to install the old version of `bs4Dash`:
+
+#### 1. Using devtools to install older package version
+
+```r
+require(devtools)
+install_version("bs4Dash", version = "0.5.0", repos = "http://cran.us.r-project.org")
+```
+
+#### 2. Installing an older package from source
+
+You can download the old version (e.g., v0.5.0) [here](https://cran.r-project.org/src/contrib/Archive/bs4Dash/), and install it manually.
+
 <br></br>
 
