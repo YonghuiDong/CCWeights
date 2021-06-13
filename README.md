@@ -1,6 +1,7 @@
 
 # Welcome to CCWeights <img src='https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/logo.png' align="right" height="130"/>
 
+[![CRAN status](http://www.r-pkg.org/badges/version/CCWeights)](https://cran.r-project.org/package=CCWeights) 
 
 Calibration curves are used to understand the instrumental response to an analyte and predict the concentration in an unknown sample. A well-established and interpreted calibration curve is essential for any analytical methodology. 
 
