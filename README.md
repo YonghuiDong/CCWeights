@@ -1,5 +1,5 @@
 
-# Welcome to CCWeights
+# Welcome to CCWeights <img src='pix/logo.png' align="right" height="130"/>
 
 
 Calibration curves are used to understand the instrumental response to an analyte and predict the concentration in an unknown sample. A well-established and interpreted calibration curve is essential for any analytical methodology. 
