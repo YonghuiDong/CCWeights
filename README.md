@@ -55,7 +55,7 @@ Below is an overview of CCWeights workflow:
 
 ## Known Issues
 
-Due to substantial breaking changes in the API of R package `bs4Dash`, and CCWeights, built with bs4Dash (version <= 0.5.0), is not compatible with v2.0.0 . The users need to use the old version to run the shiny App of CCWeights locally.
+Due to substantial breaking changes in the API of R package `bs4Dash`, CCWeights, built with bs4Dash (version <= 0.5.0), is not compatible with v2.0.0. Therefore, users need to install the old version in order to run the shiny App of CCWeights locally.
 
 There are two simple ways to install the old version of `bs4Dash`:
 
