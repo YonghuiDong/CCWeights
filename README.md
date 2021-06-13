@@ -29,7 +29,7 @@ Note: you need to install R package `bs4Dash` version <= 0.50 in order to run CC
 
 Below is an overview of CCWeights workflow:
 
-<img src="https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/workflow.png" width = "60%"/>
+<img src="https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/workflow.png" width = "50%"/>
 
 <em>Figure 1. Schematic workflow of CCWeights</em>
 
@@ -47,7 +47,7 @@ Below is an overview of CCWeights workflow:
   
 - You can also **[<b><span style="color:#F17F42">download the templates here</span></b>](https://github.com/YonghuiDong/CCWeights/tree/main/inst/shiny/Templete)** to prepare your data accordingly.
 
-<img src="https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/datafile.png" width="60%"/>
+<img src="https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/datafile.png" width="50%"/>
 
 <em>Figure 2. Data format requirement</em>
 
