@@ -13,7 +13,7 @@ CCWeights can be applied for any analytical assays, in which linear calibration 
 
 Below is an overview of CCWeights workflow:
 
-<img src="pix/workflow.png" width="45%"/>
+<img src="https://github.com/YonghuiDong/CCWeights/blob/main/inst/shiny/Gui/mds/pix/workflow.png" width = "50%"/>
 
 <em>Figure 1. Schematic workflow of CCWeights</em>
 
