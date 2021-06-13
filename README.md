@@ -10,7 +10,20 @@ CCWeights can be applied for any analytical assays, in which linear calibration 
 
 # Installation
 
+1. Stable version
 
+```r
+install.packages("CCWeights")
+```
+
+2. Development Version
+
+```
+require(devtools)
+install_github("YonghuiDong/CCWeights")
+```
+
+Note:
 
 # Workflow
 
