@@ -8,6 +8,9 @@ Calibration curves are used to understand the instrumental response to an analyt
 
 CCWeights can be applied for any analytical assays, in which linear calibration curves are used for quantification. For instance, Ultraviolet-visible spectroscopy- and liquid/gas chromatography mass spectrometry-based quantitative studies.
 
+# Installation
+
+
 
 # Workflow
 
