@@ -73,7 +73,7 @@ You can download the old version (e.g., v0.5.0) [here](https://cran.r-project.or
 
 ## Citation
 
-If you find `CCWeights` useful, please consider citing our publication:
+If you find `CCWeights` useful, please consider citing our publication :smiley::
 
 - CCWeights: An R package and web application for automated evaluation and selection of weighting factors for accurate quantification using linear calibration curve.
 
