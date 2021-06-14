@@ -71,12 +71,12 @@ install_version("bs4Dash", version = "0.5.0", repos = "http://cran.us.r-project.
 
 You can download the old version (e.g., v0.5.0) [here](https://cran.r-project.org/src/contrib/Archive/bs4Dash/), and install it manually.
 
-<br></br>
-
 ## Citation
 
 If you find `CCWeights` useful, please consider citing our publication:
 
 - CCWeights: An R package and web application for automated evaluation and selection of weighting factors for accurate quantification using linear calibration curve.
+
+<br></br>
 
 
