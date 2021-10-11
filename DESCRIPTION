@@ -1,7 +1,7 @@
 Package: CCWeights
 Type: Package
 Title: Perform Weighted Linear Regression for Calibration Curve
-Version: 0.1.3
+Version: 0.1.5
 Author: Yonghui Dong
 Maintainer: Yonghui Dong <yonghui.dong@gmail.com>
 Description: Automated assessment and selection of weighting factors for accurate quantification using linear calibration curve. 
